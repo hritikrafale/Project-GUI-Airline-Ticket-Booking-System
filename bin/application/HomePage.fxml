@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+  <tabs>
+    <Tab fx:id="tab1" text="One Way">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="33.0" layoutY="25.0" prefHeight="30.0" prefWidth="100.0" text="Book a Flight" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="317.0" AnchorPane.topAnchor="25.0">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="tab1_departure_date" layoutX="34.0" layoutY="142.0" prefHeight="30.0" prefWidth="150.0" promptText="Departure Date" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="266.0" AnchorPane.topAnchor="150.0" />
+                  <TextField fx:id="tab1_num_of_passengers" layoutX="225.0" layoutY="150.0" prefHeight="30.0" promptText="Number of Passengers" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="150.0" />
+                  <Button fx:id="tab1_search" layoutX="164.0" layoutY="299.0" mnemonicParsing="false" onAction="#tabOneHandeler" prefHeight="30.0" prefWidth="0.0" text="Search Flights" AnchorPane.leftAnchor="164.0" AnchorPane.rightAnchor="196.0" />
+                  <RadioButton fx:id="tab1_armed_forces" layoutX="33.0" layoutY="229.0" mnemonicParsing="false" text="Armed Forces" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="230.0">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="discount" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="tab1_senior_citizen" layoutX="160.0" layoutY="229.0" mnemonicParsing="false" text="Senior Citizen" toggleGroup="$discount" AnchorPane.topAnchor="230.0" />
+                  <RadioButton fx:id="tab1_students" layoutX="300.0" layoutY="230.0" mnemonicParsing="false" text="Students" toggleGroup="$discount" AnchorPane.topAnchor="230.0" />
+                  <Button fx:id="tab1_sign_out" layoutX="374.0" layoutY="13.0" mnemonicParsing="false" onAction="#signOutChange" text="Sign out" />
+                  <ComboBox fx:id="tab1_fromcombobox" layoutX="34.0" layoutY="78.0" prefHeight="30.0" prefWidth="150.0" promptText="From" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="266.0" AnchorPane.topAnchor="75.0" />
+                  <ComboBox fx:id="tab1_tocombobox" layoutX="225.0" layoutY="78.0" prefHeight="30.0" prefWidth="150.0" promptText="To" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="75.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="tab2" text="Round Trip">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="25.0" prefHeight="30.0" text=" Book a Flight" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="317.0" AnchorPane.topAnchor="25.0">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="tab2_departure_date" layoutX="26.0" layoutY="153.0" prefHeight="30.0" promptText="Departure Date" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="150.0" />
+                  <DatePicker fx:id="tab2_return_date" layoutX="218.0" layoutY="153.0" prefHeight="30.0" promptText="Return Date" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="150.0" />
+                  <TextField fx:id="tab2_num_of_passengers" layoutX="33.0" layoutY="225.0" prefHeight="30.0" promptText="Number of Passengers" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="225.0" />
+                  <Button fx:id="tab2_search" layoutX="165.0" layoutY="325.0" mnemonicParsing="false" onAction="#tabTwoHandeler" text="Search Flights" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="195.0" />
+                  <RadioButton fx:id="tab2_armed_forces" layoutX="225.0" layoutY="208.0" mnemonicParsing="false" text="Armed Forces">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="discount2" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="tab2_students" layoutX="225.0" layoutY="247.0" mnemonicParsing="false" text="Student" toggleGroup="$discount2" />
+                  <RadioButton fx:id="tab2_senior_citizen" layoutX="225.0" layoutY="282.0" mnemonicParsing="false" text="Senior Citizen" toggleGroup="$discount2" />
+                  <ComboBox fx:id="tab2_fromcombobox" layoutX="33.0" layoutY="76.0" prefHeight="30.0" prefWidth="150.0" promptText="From" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="75.0" />
+                  <ComboBox fx:id="tab2_tocombobox" layoutX="225.0" layoutY="78.0" prefHeight="30.0" prefWidth="150.0" promptText="To" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="75.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

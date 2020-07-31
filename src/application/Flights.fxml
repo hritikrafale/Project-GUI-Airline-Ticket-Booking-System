@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FlightsController">
+   <children>
+      <TableView fx:id="table" layoutY="66.0" prefHeight="287.0" prefWidth="850.0" AnchorPane.topAnchor="66.0">
+        <columns>
+            <TableColumn fx:id="Slno" prefWidth="50.0" text="Slno" />
+          <TableColumn fx:id="From" prefWidth="100.0" text="From" />
+          <TableColumn fx:id="To" prefWidth="100.0" text="To" />
+            <TableColumn fx:id="Departure_Date" prefWidth="125.0" text="Departure Date" />
+            <TableColumn fx:id="Arrival_Date" prefWidth="125.0" text="Arrival Date" />
+            <TableColumn fx:id="Departure_Time" prefWidth="125.0" text="Departure Time" />
+            <TableColumn fx:id="Arrival_Time" prefWidth="125.0" text="Arrival Time" />
+            <TableColumn fx:id="Price" prefWidth="100.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="300.0" layoutY="7.0" prefHeight="30.0" text="Flights" underline="true" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="157.0" layoutY="450.0" mnemonicParsing="false" onAction="#fillTable" prefHeight="30.0" text="Get Flights" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="443.0">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="444.0" layoutY="450.0" mnemonicParsing="false" onAction="#ticketGenerator" prefHeight="30.0" text="Book Flight" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="156.0" />
+      <TextField fx:id="slno_choice" layoutX="444.0" layoutY="395.0" prefHeight="30.0" prefWidth="250.0" promptText="Slno (Flight you wish to Book)" />
+      <TextField fx:id="name" layoutX="157.0" layoutY="395.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter your Name" />
+   </children>
+</AnchorPane>

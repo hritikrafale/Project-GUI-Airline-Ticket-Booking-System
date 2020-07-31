@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TicketController">
+   <children>
+      <AnchorPane prefHeight="350.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="to_1" layoutX="384.0" layoutY="141.0" prefHeight="17.0" prefWidth="97.0" AnchorPane.leftAnchor="370.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="departure_time_1" layoutX="370.0" layoutY="185.0" prefHeight="17.0" prefWidth="97.0" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="182.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="370.0" layoutY="225.0" text="15E" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="222.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="name_2" layoutX="510.0" layoutY="87.0" prefHeight="17.0" prefWidth="180.0" AnchorPane.topAnchor="90.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="480.0" layoutY="124.0" text="From" AnchorPane.topAnchor="125.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="480.0" layoutY="150.0" text="To" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="155.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="480.0" layoutY="182.0" text="Flight No" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="185.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="date_2" layoutX="480.0" layoutY="199.0" text="Date" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="215.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="480.0" layoutY="229.0" text="Arrival Time" AnchorPane.topAnchor="245.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="481.0" layoutY="261.0" text="Departure Time" AnchorPane.topAnchor="275.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="481.0" layoutY="297.0" text="Seat No" AnchorPane.topAnchor="305.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="585.0" layoutY="297.0" text="Class" AnchorPane.topAnchor="305.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="256.0" text="Date" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="260.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date_1" layoutX="146.0" layoutY="262.0" AnchorPane.topAnchor="260.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="267.0" layoutY="262.0" text="Class" AnchorPane.topAnchor="260.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="262.0" text="R" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="260.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="from_2" layoutX="586.0" layoutY="126.0" prefHeight="19.0" prefWidth="107.0" AnchorPane.leftAnchor="586.0" AnchorPane.topAnchor="125.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="to_2" layoutX="586.0" layoutY="156.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.topAnchor="155.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="flightno_2" layoutX="586.0" layoutY="186.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.topAnchor="185.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="date_2" layoutX="586.0" layoutY="220.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.topAnchor="215.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="boarding_time_2" layoutX="586.0" layoutY="246.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.topAnchor="245.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="departure_time_2" layoutX="586.0" layoutY="276.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.topAnchor="275.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="543.0" layoutY="306.0" text="15E" AnchorPane.topAnchor="305.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="628.0" layoutY="306.0" text="R" AnchorPane.topAnchor="305.0">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="18.0" layoutY="13.0" prefHeight="64.0" prefWidth="663.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="21.0" prefHeight="22.0" prefWidth="273.0" text="Email Boarding Pass(Web Check in)">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="468.0" layoutY="18.0" text="AkashAirlines.In">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="31.0" endY="-14.0" layoutX="630.0" layoutY="14.0" startX="31.0" startY="308.0" />
+                  <Line endX="55.0" endY="245.0" layoutX="367.0" layoutY="78.0" startX="55.0" startY="-78.0" />
+                  <Line endX="553.5" endY="-10.0" layoutX="107.0" layoutY="78.0" startX="-106.0" startY="-10.0" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="299.0" layoutY="301.0" mnemonicParsing="false" onAction="#generateTicket" prefHeight="25.0" prefWidth="125.0" text="Genrate Ticket">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="40.0" layoutY="297.0" text="Price" />
+            <Label fx:id="price" layoutX="146.0" layoutY="297.0" prefHeight="17.0" prefWidth="90.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font></Label>
+            <Line endX="525.0" layoutX="156.0" layoutY="13.0" startX="-138.0" />
+            <Line endX="-36.5" endY="236.0" layoutX="55.0" layoutY="99.0" startX="-36.5" startY="-85.0" />
+            <Line endX="561.0" layoutX="120.0" layoutY="336.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="40.0" layoutY="129.0" prefHeight="20.0" prefWidth="39.0" text="From" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="96.0" text="Name" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="167.0" text="Flight No" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="204.0" text="Arrival Time" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="142.0" text="To" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="182.0" text="Departure Time" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="333.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="222.0" text="Seat No" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_1" layoutX="147.0" layoutY="102.0" prefHeight="17.0" prefWidth="220.0" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="335.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="from_1" layoutX="145.0" layoutY="149.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="448.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="flightno_1" layoutX="145.0" layoutY="182.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="boarding_time_1" layoutX="145.0" layoutY="222.0" prefHeight="17.0" prefWidth="107.0" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
